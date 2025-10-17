@@ -1,6 +1,6 @@
 <!-- Unit 3 Project
 Requirements
-[  ] Two External Links
+[ yes ] Two External Links
 [  ] Table (minimum 2 Columns by 3 Rows)
 [  ] Three CSS Rules
 [  ] Three Images
@@ -10,7 +10,7 @@ Select ONE Additional Feature to Add
 [ no ] Feature 2 - Change the Cursor
 [ no ] Feature 3 - Make a Background Color Semi-Transparent
 [ no ] Feature 4 - Include at Flip Card
-[ no ] Feature 5 - Include at least two Internal links
+[ yes ] Feature 5 - Include at least two Internal links
 -->
 
 <!DOCTYPE html>
@@ -26,11 +26,12 @@ Select ONE Additional Feature to Add
 <body>
 
   <h1>Joey's Recipe Book</h1>
-
+  
   <h2>Contents:</h2>
 
   <ol>
-    <li><a href="ingredients">ingredients</a></li>
+    <li><a href="#ingredients">ingredients</a></li>
+    <li><a href="#quantity"> quantity </a></li>
   </ol>
 
   <h2 id="recipe1">Recipe #1</h2>
@@ -43,15 +44,15 @@ Select ONE Additional Feature to Add
   <table>
     <thead>
       <tr>
-        <th>Ingredients</th>
-        <th>Quantity</th>
+        <th id="ingredients">Ingredients</th>
+        <th id="quantity">Quantity</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>Premium chocolate (milk or dark), a pistachio cream filling, <br>
           kataifi pastry for crunch, and tahini (with a chocolate bar mold)</td>
-        <td>Quantity #1</td>
+        <td>12 oz (340g) milk chocolate, 7 oz (198g) pistachio butter, 5 oz (142g) chopped kataifi, <br> and 2 tablespoons of tahini and unsalted butter</td>
       </tr>
     </tbody>
   </table>
@@ -64,8 +65,8 @@ Select ONE Additional Feature to Add
   <p><strong>Step 6:</strong> After around 10 minutes, the chocolate should be ready to eat!
   </p>
 
-  <p><em>Source: <a href="recipe websites">Some recipes websites</a></em></p>
-
+  <p> <em>Source: <br> <a href="https://www.youtube.com/watch?v=A1BOIRhwrl4&t=0">How to make dubai chocolate - Video</a></li> <br>
+    <a href="https://www.thekitchn.com/dubai-chocolate-bar-recipe-23725980"> Dubai Chocolate Bar Recipe </a></li>
 </body>
 
 </html>
