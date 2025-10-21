@@ -1,8 +1,8 @@
 <!-- Unit 3 Project
 Requirements
 [ yes ] Two External Links
-[  ] Table (minimum 2 Columns by 3 Rows)
-[  ] Three CSS Rules
+[ yes ] Table (minimum 2 Columns by 3 Rows)
+[ yes ] Three CSS Rules
 [  ] Three Images
 
 Select ONE Additional Feature to Add  
@@ -10,7 +10,7 @@ Select ONE Additional Feature to Add
 [ no ] Feature 2 - Change the Cursor
 [ no ] Feature 3 - Make a Background Color Semi-Transparent
 [ no ] Feature 4 - Include at Flip Card
-[ yes ] Feature 5 - Include at least two Internal links
+[ no ] Feature 5 - Include at least two Internal links
 -->
 
 <!DOCTYPE html>
@@ -20,6 +20,13 @@ Select ONE Additional Feature to Add
   <title>Project: Recipe book</title>
   <meta charset="utf-8">
   <style>
+    .dessert {
+      background-color: aliceblue;
+    }
+    .boom {
+      background-color: rgb(249, 252, 243);
+    }
+
   </style>
 </head>
 
@@ -30,29 +37,40 @@ Select ONE Additional Feature to Add
   <h2>Contents:</h2>
 
   <ol>
-    <li><a href="#ingredients">ingredients</a></li>
-    <li><a href="#quantity"> quantity </a></li>
+    <li>dessert</a></li>
+    <li>ingredients </a></li>
+    <li>measurements</li>
   </ol>
 
   <h2 id="recipe1">Recipe #1</h2>
 
   <ul>
-    <li>Time: 30-50 minutes</li>
     <li>Serves: 1 dubai chocolate</li>
+    <li>Time: 30 - 50</li>
+    <br>
+    <li>Serves: Churros
+      <li>Time:25 - 45</li>
   </ul>
 
   <table>
     <thead>
       <tr>
-        <th id="ingredients">Ingredients</th>
-        <th id="quantity">Quantity</th>
-      </tr>
-    </thead>
-    <tbody>
+           <th class="dessert">Dessert</th>
+          <th class="dessert">Ingredients</th>
+           <th class="dessert">measurements</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="boom">Dubai Chocolate</td>
+                <td class="boom">Premium chocolate (milk or dark), a pistachio cream filling, <br>
+                kataifi pastry for crunch, and tahini (with a chocolate bar mold)</td>
+                  <td class="boom">12 oz (340g) milk chocolate, 7 oz (198g) pistachio butter, 5 oz (142g) chopped kataifi, <br> and 2 tablespoons of tahini and unsalted butter</td>
+              </tr>
       <tr>
-        <td>Premium chocolate (milk or dark), a pistachio cream filling, <br>
-          kataifi pastry for crunch, and tahini (with a chocolate bar mold)</td>
-        <td>12 oz (340g) milk chocolate, 7 oz (198g) pistachio butter, 5 oz (142g) chopped kataifi, <br> and 2 tablespoons of tahini and unsalted butter</td>
+        <td class="boom">Churros</td>
+        <td class="boom">A dough made from water, flour, eggs, butter, and salt, which is then piped and fried in vegetable oil</td>
+        <td class="boom">1 cup water, 1/4 cup butter, 1 tbsp sugar, 1/4 tsp salt, 1 cup all-purpose flour, 1 large egg, and 1/2 tsp vanilla extract</td>
       </tr>
     </tbody>
   </table>
@@ -66,7 +84,7 @@ Select ONE Additional Feature to Add
   </p>
 
   <p> <em>Source: <br> <a href="https://www.youtube.com/watch?v=A1BOIRhwrl4&t=0">How to make dubai chocolate - Video</a></li> <br>
-    <a href="https://www.thekitchn.com/dubai-chocolate-bar-recipe-23725980"> Dubai Chocolate Bar Recipe </a></li>
+    <a href="https://www.happyfoodstube.com/homemade-churros/"> Homemade Churros Recipe </a></li>
 </body>
 
 </html>
