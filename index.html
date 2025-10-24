@@ -9,7 +9,7 @@ Select ONE Additional Feature to Add
 [ no ] Feature 1 - Include :hover Effect
 [ no ] Feature 2 - Change the Cursor
 [ no ] Feature 3 - Make a Background Color Semi-Transparent
-[ no ] Feature 4 - Include at Flip Card
+[ yes ] Feature 4 - Include at Flip Card
 [ no ] Feature 5 - Include at least two Internal links
 -->
 
@@ -20,17 +20,60 @@ Select ONE Additional Feature to Add
   <title>Project: Recipe book</title>
   <meta charset="utf-8">
   <style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-back, .flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-color: #f5efef;
+  color: rgb(252, 242, 242);
+}
+
+.flip-card-front {
+  background-color: #fff4f9;
+  color: white;
+  transform: rotateY(180deg);
+}
     .contents {
-        background-color:rgb(255, 255, 238)
+        background-color:rgb(250, 250, 238)
       }
     body{
       background-color: rgb(248, 247, 243);
     }
     .dessert {
-      background-color:rgb(237, 242, 243);
+      background-color:rgb(237, 243, 238);
     }
     .boom {
-      background-color:rgb(237, 242, 243)
+      background-color:rgb(237, 243, 238)
     }
       img {
         border: 5px solid#eeeef0
@@ -85,11 +128,22 @@ Select ONE Additional Feature to Add
       </tr>
     </tbody>
   </table>
-  <br>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIFSz9sv_S2K3WULv016hQT-WjLgBwWXdjhA&s">
 
-  <p> <em>Source: <br> <a href="https://www.youtube.com/watch?v=A1BOIRhwrl4&t=0">How to make dubai chocolate - Video</a></li> <br>
-    <a href="https://www.happyfoodstube.com/homemade-churros/"> Homemade Churros Recipe </a></li>
-</body>
-
+ <p> <em>Source: <br> 
+    <ul>
+    <li><a target="_blank" href="https://www.youtube.com/watch?v=A1BOIRhwrl4&t=0"> How to make dubai chocolate - Video</a></li>
+    <li><a target="_blank" href="https://www.happyfoodstube.com/homemade-churros/"> Homemade Churros Recipe </a></li>
+    </ul>
+  </p>
+<br>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIFSz9sv_S2K3WULv016hQT-WjLgBwWXdjhA&s" alt="Avatar" style="width:400px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+</div>
+</div>
+</div>
+  </body>
 </html>
